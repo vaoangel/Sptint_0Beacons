@@ -46,15 +46,17 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/elTexto"
+        app:layout_constraintVertical_bias="0.776" />
 
     <Button
         android:id="@+id/botonEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="boton_enviar_pulsado"
-        android:text="Button"
+        android:text="Boton enviar datos reales a BDD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonBuscarNuestroDispositivoBTLE" />
@@ -63,9 +65,23 @@
         android:id="@+id/elTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
         android:text="TextView"
         app:layout_constraintTop_toBottomOf="@+id/botonEnviar"
-        tools:layout_editor_absoluteX="177dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="boton_simular_Bdd"
+        android:text="Boton logica fake a BDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonEnviar"
+        app:layout_constraintVertical_bias="0.105"
+        tools:ignore="UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -299,33 +299,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void boton_enviar_pulsado (View quien){
-    Log.d(">>>>>>>>>>", "entra boton");
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put("medida",s );
+        Log.d(">>>>>>>>>>", "entra boton que llama a la función de la logica");
 
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        AndroidNetworking.post("http://192.168.0.12:3000/insertar_valor")
-                .addJSONObjectBody(jsonObject) // posting json
-                .setTag("test")
-                .setPriority(Priority.MEDIUM)
-                .build()
-                .getAsJSONArray(new JSONArrayRequestListener() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        // do anything with response
-                    }
-                    @Override
-                    public void onError(ANError error) {
-                        Log.d(">>>>>>>>>>", String.valueOf(error));
-
-                    }
-                });
+        Logica logica = new Logica();
+        logica.enviar_post(s);
+        Log.d(">>>>>>>>>>", "Sale boton que llama a la función de la logica");
 
     } // ()
+
+    public void boton_simular_Bdd(View v){
+        Log.d(">>>>>>>>>>", "entra boton que llama a la función de la logica fake");
+
+     Logica_fake Fake = new Logica_fake();
+        Fake.logica_bdd_fake();
+        Log.d(">>>>>>>>>>", "Sale boton que llama a la función de la logica fake");
+
+    }
 
 } // class
