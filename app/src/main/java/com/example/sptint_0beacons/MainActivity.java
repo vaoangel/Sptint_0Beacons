@@ -314,6 +314,9 @@ public class MainActivity extends AppCompatActivity {
         Fake.logica_bdd_fake();
         Log.d(">>>>>>>>>>", "Sale boton que llama a la función de la logica fake");
 
+
+
+
     }
 
 } // class
