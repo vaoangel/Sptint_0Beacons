@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sptint_0Beacons</string>
+    <string name="detener_b_saqueda_dispositivos_btle">Detener búsaqueda Dispositivos BTLE</string>
+    <string name="buscar_nuestro_dispositivo_btle">Buscar nuestro dispositivo BTLE</string>
+    <string name="buscar_dispositivos_btle_nou_4">Buscar Dispositivos BTLE nou 4</string>
+    <string name="button">Button</string>
+</resources>
